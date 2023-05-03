@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.content{
+    width: 100%;
+    height: 100%;
+    background-image: url(IM1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 30px;
+    padding-top: 50px;
+}
+nav{
+    flex: 1px;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style: none;
+}
+nav ul li{
+    display:inline-block ;
+    margin-right: 70px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(234, 19, 19);
+    font-family: sans-serif;
+}
+nav ul li button{
+    font: 20px;
+    padding: 10px 20 px;
+    border: none;
+    background-color: green;
+    color: blueviolet;
+    font-family: sans-serif;
+    border-radius: 30px;
+    cursor: pointer;
+
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    font-family: sans-serif;
+    
+}
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="navbar">
+            <div>
+                <a href="#">My website</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="login form.html">Home</a></li>
+                    <!-- <li><a href="#">About</a></li> -->
+                    <!-- <li><a href="#">Services</a></li> -->
+                    <li><a href="CONTACT.HTML">Contact</a></li>
+                    <li><a href="#"><button onclick="myfunction()">Login</button></a></li>
+                </ul>
+            </nav>
+        </div>
+        <link rel="stylesheet" href="#">
+        <a href="personal.html" style="margin-left: 44px;color: aliceblue;">Personal Information</a>
+    </div>
+   
+</body>
+<script type="text/javascript">
+    function myfunction(){
+        window.prompt('your not allowed to login,Please contact Us');
+    }
+</script>
+</html>
