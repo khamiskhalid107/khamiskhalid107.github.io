@@ -45,6 +45,7 @@
     <script>
         const Submit_button = document.querySelector(".button");
 Submit_button.onclick = () => {
+    console.log('Submit_button');
 
     // all input data received this variables
     const name = document.getElementById("name").value;
@@ -55,9 +56,9 @@ Submit_button.onclick = () => {
 
     // store the data local
     localStorage.setItem('FirstName',name);
-    localStorage.setItem('Email',Email);
-    localStorage.setItem('Aims',Aims);
-    localStorage.setItem('message',message);
+    localStorage.setItem('email',Email);
+    localStorage.setItem('aims',Aims);
+    localStorage.setItem('Message',message);
     // localStorage.setItem('Cpassword',cpass);
 
     // condition
@@ -89,9 +90,9 @@ Submit_button.onclick = () => {
             <label for="Message">Message$Comment</label>
             <input type="text " id="message" required>
             <textarea name="message" id="box" cols="30" rows="10"></textarea>
-            <input type="submit" value="submit" id="Submit-button"><br><br>
+            <button><input type="submit" value="submit" id="Submit-button"></button>
             
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7932.973876926465!2d39.30763370000001!3d-6.199307299999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2stz!4v1683064129362!5m2!1sen!2stz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7932.973876926465!2d39.30763370000001!3d-6.199307299999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2stz!4v1683064129362!5m2!1sen!2stz" width="500" height="300" style="border: 3px chocolate;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </form>
     </fieldset>
 </body>
